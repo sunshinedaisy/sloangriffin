@@ -1,0 +1,530 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100italic,100,300italic,400italic,700,700italic);
+
+html{
+  /*background-color: #fcf8f7;*/
+  /*background-color: #f5e7e2;*/
+  /*background-color: #faf2f0;*/
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body{
+  max-width: 1000px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0px 0px 10px #eeefff;
+}
+@font-face{
+  font-family: 'Penelope Anne';
+  src: url('Penelope Anne.ttf');
+  font-family: 'DK Lampion';
+  src: url('DK Lampion.otf');
+  src: url('DK Mango Smoothie.otf');
+}
+/* Home page navigation bar */
+header{
+/*background-color: #faf2f0;*/
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+header img{
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading_banner{
+ background-color: 
+}
+.name{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'DK Mango Smoothie', 'DK Lampion';
+}
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+li{
+  display: inline;
+  padding-right: 5vw;
+}
+.navigation a{
+  font-family: 'Lato';
+  font-weight: 400;
+  color: #343434;
+  font-size: 2.8vh;
+  text-decoration: none;
+}
+.navigation a:active{
+  font-weight: 800;
+}
+.navigation .active{
+  font-weight: 800;
+}
+/* Homepage body section */
+
+.middle {
+  position: fixed;
+  width: 100vw;
+  height: 50vh;
+  top: 10vh;
+  left: 0vw;
+  background-color: #e9705e;
+  /*background-image: url("pat.png");
+  background-repeat:repeat;*/
+}
+.middle_image{
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  top:0vh;
+}
+.middle_image img{
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  top:0vh;
+  object-fit: cover;
+}
+.middle p{
+  position: relative;
+  text-align: center;
+  font-family: 'Lato-Light', 'Lato';
+  font-weight: 300;
+  color: #faf2f0;
+  font-size: 3vh;/*2.2vh*/
+  top: 20vh;
+}
+.quote{
+  position: fixed;
+  width: 100vw;
+  height: 25vh;
+  top: 60vh;
+  left: 0vw;
+  background-color: #df7f5a;
+}
+
+.quote p{
+  position: relative;
+  text-align: center;
+  font-family: 'Lato-Thin', 'Lato';
+  font-weight: 300; /*100*/
+  font-style: oblique;
+  color: #faf2f0;
+  font-size: 2.2vh;/*2vh*/
+  top: 10vh;
+}
+/* About Page*/
+.me{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about_image{
+  width: 40%;
+  height: 40%;
+  margin: 2vw;
+}
+.about_text{
+  width: 40%;
+  height: auto;
+  margin: 2vw;
+}
+.about_text p{
+  font-family: 'Lato-Light', 'Lato';
+  font-size: 1em;
+  font-weight: 300;
+}
+.about_text a{
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* Portfolio Page */
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.title{
+  position: relative;
+  text-align: center;
+  font-family: 'DK Lampion', 'Penelope Anne', 'Amatic SC';
+  font-size: 10vh;
+  bottom: -20vh;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+
+}
+.game_on{
+  width: 28vw;
+  height: 28vw;
+  margin: 1vw;
+}
+.shadow_cast{
+  width: 28vw;
+  height: 28vw;
+  margin: 1vw;
+}
+
+.shadow_cast img{
+object-fit: contain;
+width: 100%;
+height: 100%;
+}
+
+.game_on img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.shadow{
+  position: relative;
+  font-family: 'Penelope Anne', 'DK Lampion';
+  font-size: 3vw;
+  text-align: center;
+  /*top: 33vh;
+  left: 10vw;*/
+  color: #fcf8f7;
+  z-index: 3;
+  padding-top: 15vh;
+  visibility: hidden;
+}
+.overlay:hover .shadow{
+  visibility: visible;
+}
+
+.overlay{
+  position: absolute;
+  background-color: #faf2f0;
+  width: 28vw;
+  height: 28vw;
+  opacity: 0.15;
+  z-index: 2;
+}
+.overlay:hover{
+  background-color: #1a1919;
+  opacity: 0.8;
+}
+.mapn{
+  width: 28vw;
+  height: 28vw;
+  margin: 1vw;
+}
+
+.mapn img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.wicse{
+  width: 28vw;
+  height: 28vw;
+   margin: 1vw;
+}
+
+.wicse img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.todo{
+  width: 28vw;
+  height: 28vw;
+    margin: 1vw;
+}
+
+.todo img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+
+
+.stemd{
+  width: 28vw;
+  height: 28vw;
+    margin: 1vw;
+}
+
+.stemd img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.ues{
+  width: 28vw;
+  height: 28vw;
+    margin: 1vw;
+}
+
+.ues img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.icons{
+  width: 28vw;
+  height: 28vw;
+    margin: 1vw;
+}
+
+.icons img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+
+.costanza{
+  width: 28vw;
+  height: 28vw;
+   margin: 1vw;
+}
+
+.costanza img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.pie{
+  width: 28vw;
+  height: 28vw;
+    margin: 1vw;
+}
+
+.pie img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.ferris{
+  width: 28vw;
+  height: 28vw;
+    margin: 1vw;
+}
+
+.ferris img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.oz{
+  width: 28vw;
+  height: 28vw;
+    margin: 1vw;
+}
+
+.oz img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.paradise{
+  width: 28vw;
+  height: 28vw;
+    margin: 1vw;
+}
+
+.paradise img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.doubleEx {
+  width: 28vw;
+  height: 28vw;
+  margin: 1vw;
+}
+
+.doubleEx img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+/* Animation Page */
+
+.shade {
+  width: 28vw;
+  height: 28vw;
+   margin-right: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+
+.shade img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.baymax{
+  width: 28vw;
+  height: 28vw;
+    margin-right: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+
+.baymax img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.ball {
+  width: 28vw;
+  height: 28vw;
+    margin-right: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+
+.ball img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.up {
+  width: 28vw;
+  height: 28vw;
+    margin-right: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+
+.up img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.bedroom {
+  width: 28vw;
+  height: 28vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+
+.bedroom img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+/* Element Pages*/
+.showcase{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.side{
+  display: flex;
+  flex-direction: column;
+}
+.side img{
+  position: static;
+  width: 30vw;
+  height: auto;
+  margin: 2vw;
+}
+.side iframe{
+  width: 30vw;
+  height: 30vh;
+  margin: 2vw;
+}
+.explantion{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  font-family: 'Lato-Light', 'Lato';
+  font-weight: 300;
+  margin: 2vw;
+}
+.item{
+  font-size: 3vh;
+}
+.item-about{
+  font-family: 'Lato-Light', 'Lato';
+  font-weight: 300;
+  font-size: 1.5vw;
+  width: 30vw;
+  height: auto;
+  font-size: 2vh;
+}
+.arrow{
+  position: absolute;
+  top: 90vh;
+  right: 5vw;
+  width: 2vw;
+  height: auto;
+}
+.backarrow{
+  position: absolute;
+  width: 2vw;
+  height: auto;
+  left: 5vw;
+  top: 90vh;
+}
+/* Footer Section */
+footer{
+  position: fixed;
+  left: 46vw;
+  text-align: center;
+  height: 20vh;
+  bottom: -5vh;
+}
+
+footer p{
+  text-align: center;
+  font-family: 'Lato';
+  color: #343434;
+  font-size: 1.5vw;
+}
+
+.round-button{
+  display: inline;
+}
+
+.round-button img{
+  width: 3vw;
+  height: auto;
+}
+
+@media screen and (max-width: 799px){
+  .me{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about_image{
+  width: 80%;
+  height: 80%;
+}
+.about_text{
+  width: 80%;
+}
+
+}
